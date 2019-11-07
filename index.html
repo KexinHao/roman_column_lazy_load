@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="pillars-output.js"></script>
+        <script type="text/javascript">
+            function load_taobao_images(){
+                var div = document.getElementById('data');
+
+                for(var i = 0; i < images.length; i++){
+                    var img = "<img class='tile' src='" + images[i] + "'>";
+                    div.innerHTML = div.innerHTML + img;
+                }
+
+            }
+        </script>
+    </head>
+    <body onload="load_taobao_images()">
+        <div id="data">
+        </div>
+
+    </body>
+
+</html>
